@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.triviaapp.viewModel.FirstPageViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".summary.Summary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            android:text="@{viewModel.model.name}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_25"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/val_20"
+            android:layout_marginStart="@dimen/val_20"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_selected"
+            android:text="@string/user_selected"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_20"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/val_20"
+            android:layout_marginStart="@dimen/val_20"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_q1"
+            android:text="@{viewModel.model.question1}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_20"
+            app:layout_constraintTop_toBottomOf="@id/tv_selected"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/val_20"
+            android:layout_marginStart="@dimen/val_20"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_answer1"
+            android:text="@{viewModel.model.answer1}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_20"
+            app:layout_constraintTop_toBottomOf="@id/tv_q1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/val_20"
+            android:layout_marginStart="@dimen/val_20"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_q2"
+            android:text="@{viewModel.model.question2}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_20"
+            app:layout_constraintTop_toBottomOf="@id/tv_answer1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/val_20"
+            android:layout_marginStart="@dimen/val_20"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_answer2"
+            android:text="@{viewModel.model.answer2}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_20"
+            app:layout_constraintTop_toBottomOf="@id/tv_q2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/val_20"
+            android:layout_marginStart="@dimen/val_20"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_finish"
+            android:text="@string/title_finish"
+            app:layout_constraintTop_toBottomOf="@id/tv_answer2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_history"
+            android:layout_marginTop="@dimen/val_20"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_history"
+            android:text="@string/title_history"
+            app:layout_constraintTop_toBottomOf="@id/tv_answer2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_finish"
+            android:layout_marginTop="@dimen/val_20"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
