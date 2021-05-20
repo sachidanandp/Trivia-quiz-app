@@ -9,7 +9,6 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.triviaapp.R
-import com.triviaapp.adapter.HistoryAdapter.*
 import com.triviaapp.model.QuizHistory
 import java.util.*
 
@@ -35,20 +34,20 @@ class HistoryAdapter(
         holder: ViewHolder,
         position: Int
     ) {
-      /*  val model = data[position]
-        holder.date.text = model.dateTime
-        holder.name.text = model.name
-        holder.q1.text = model.question1
-        holder.q2.text = model.question2
-        holder.ans1.text = model.answer1
-        holder.ans2.text = model.answer2*/
+        val model = data[position]
+        holder.date.text = "Game ${position+1}: " + model.dateTime
+        holder.name.text = "Name: "+model.name
+        holder.q1.text = "Question1: " +model.question1
+        holder.q2.text = "Question2: " +model.question2
+        holder.ans1.text = "Answer1: "+ model.answer1
+        holder.ans2.text = "Answer1: "+ model.answer2
 
-        //Log.d("name", model.name!!)
+        Log.d("name", model.name!!)
 
     }
 
     override fun getItemCount(): Int {
-        return 5
+        return data.size
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
