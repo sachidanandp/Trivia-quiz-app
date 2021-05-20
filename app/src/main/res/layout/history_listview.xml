@@ -10,7 +10,8 @@
         android:id="@+id/tv_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
+        android:text="spp"
         android:textSize="@dimen/text_20"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -19,8 +20,9 @@
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="@dimen/text_18"
+        android:text="spp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_date" />
 
@@ -29,8 +31,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/val_8"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="@dimen/text_18"
+        android:text="spp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_name" />
 
@@ -39,8 +42,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/val_8"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="@dimen/text_18"
+        android:text="spp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_q1" />
 
@@ -49,8 +53,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/val_8"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="@dimen/text_18"
+        android:text="spp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_ans1" />
 
@@ -59,8 +64,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/val_8"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="@dimen/text_18"
+        android:text="spp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_q2" />
 
